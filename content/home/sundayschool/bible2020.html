@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--icon-->
+      <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/catcon.ico" />
+    <title>Share Stuff</title>
+
+
+<!--header style-->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/color-theme.css" />
+
+
+<!--paperstyle from hugo-->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/paper.css" />
+
+      <link rel="alternative stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/github.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/color-theme.css" />
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+      <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/catcon.ico" />
+      <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}images/cat_icon.png" />
+
+    </head>
+      <body style= background:linear-gradient(#edf7ee,#94d198)>
+
+      <header class="header">
+        <section class="header-text" style="background-image:url({{ "images/ssheader.png" | absURL }})">
+
+    <br>
+    <br>
+    <br>
+
+
+          <!-- sites -->
+          <div class="navbar-container">
+            {{ range .Site.Menus.main }}
+              <a class="btn btn-default navbar-item" href="{{ .URL | absLangURL | safeURL }}">
+                {{ .Name }}
+              </a>
+            {{ end }}
+          </div>
+
+        </section>
+        </header>
+
+
+<div class=container role=main><div class=row>
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <article role=main class=post>
+      <h1>同步讀經 2020</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>講題</th>
+            <th>錄音檔</th>
+            <th>投影片</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr><td>創世記 1-3</td>
+          <td><a href=/media/1_5_2020-Genesis1-3.m4a>M4A</a></td>
+          <td><a href=/media/Gen1-3_2020.pdf>PDF</a></td></tr>
+          <tr>
+
+            <td>創世記 4-10</td>
+            <td><a href=/media/Gen4-10_2020.m4a>M4A</a></td>
+            <td><a href=/media/Gen4-10_2020_part2.pdf>PDF</a></td></tr>
+            <tr><td>創世記 11-20</td>
+              <td>--</td>
+              <td>--</td></tr><tr><td>創世記 21-30</td>
+                <td>--</td><td>--</td></tr><tr><td>創世記 31-40</td><td>--</td><td>--</td></tr><tr><td>創世記 41-50</td><td>--</td><td>--</td></tr></tbody></table><p></p><p>相關網頁：</p><p><a href=/bioethics>主日學：基督徒與當代生命倫理</a></p><p><a href=/truth>主日學：深知所信</a></p></article></div></div></div><footer><div class=container></div></footer><script src=https://code.jquery.com/jquery-1.12.4.min.js integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin=anonymous></script><script>window.jQuery||document.write('<script src="lib/jquery.min.js"><\/script>')</script><script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js integrity=sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa crossorigin=anonymous></script><script>if(typeof($.fn.modal)==='undefined'){document.write('<script src="lib/bootstrap.min.js"><\/script>')}</script><script src=https://christianethicsforchinese.org/lib/main.js></script><script>if(window.netlifyIdentity){window.netlifyIdentity.on("init",user=>{if(!user){window.netlifyIdentity.on("login",()=>{document.location.href="/admin/";});}});}</script>
+
+
+
+
+
+
+
+
+</body>
+    </html>

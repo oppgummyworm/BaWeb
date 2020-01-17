@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content="{{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
+  {{ with .Site.Params.themecolor }}
+    <meta name="theme-color" content="{{ . }}" />
+  {{ end }}
+  <meta property="og:site_name" content="{{ .Site.Title }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  {{ with .Params.images }}
+    {{ range first 5 . }}
+      <meta property="og:image" content="{{ . }}" />
+    {{ end }}
+  {{ end }}
+      <meta property="og:type" content="website" />
+        {{ range .Site.Params.customCSS }}
+          <link rel="stylesheet" href="{{ (print "css/" . ) | absURL }}">
+        {{ end }}
+
+  <title>
+    {{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}
+  </title>
+
+  <link rel="alternative stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/github.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/catcon.ico" />
+  <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}images/cat_icon.png" />
+
+<!--header style-->
+
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/color-theme.css" />
+
+<!--content style-->
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/yuki.css" />
+
+</head>
+<body>
+  <div style= background:linear-gradient(#ffffff,#d9e1d0)>
+
+  <header class="header">
+    <section class="header-text" style="background-image:url({{ "images/pubheader.png" | absURL }})">
+
+<br>
+<br>
+<br>
+
+
+      <!-- sites -->
+      <div class="navbar-container">
+        {{ range .Site.Menus.main }}
+          <a class="btn btn-default navbar-item" href="{{ .URL | absLangURL | safeURL }}">
+            {{ .Name }}
+          </a>
+        {{ end }}
+      </div>
+
+    </section>
+    </header>
+<div class="index-line u-font">
+      <h1>演講 & 出版</h1>
+    </div>
+
+<!--first one -->
+<div class="index-line u-font">
+  <span class="index-line__content u-font">
+  <h2>~書籍~</h2>
+ </span></div>
+<div class="index-sns u-font">
+
+  <a class="index-sns__name" target="_blank"
+     href="{{ .URL | safeURL }}/book">
+      《人之初：胚胎生命起點的探討》張立明 著</a>
+  <a class="index-sns__name" target="_blank"
+     href="http://www.ccmm.org.tw/httpstatus.aspx?aspxerrorpath=/page/article/show.aspx">
+      《基督徒醫學倫理系列》張立明 總編輯</a>
+</div>
+
+
+<!--second one -->
+<div class="index-line u-font">
+  <span class="index-line__content u-font">
+  <h2> ~演講~ </h2>
+</span></div>
+<div class="index-sns u-font">
+
+  <a class="index-sns__name" target="_blank"
+       href="https://mccaretreat.info/workshop.html?category=F:%E5%9F%BA%E7%9D%A3%E5%BE%92%E7%94%9F%E5%91%BD%E5%80%AB%E7%90%86&speakerid=201906">
+      中西部華人基督徒夏令營 MCCA 2019 專題：基督徒生命倫理</a>
+  <a class="index-sns__name" target="_blank"
+       href="https://www.youtube.com/watch?v=xX6us7TwXPQ&feature=youtu.be">
+      《見證分享 (正道感恩餐會 2018)</a>
+  <a class="index-sns__name" target="_blank"
+         href="https://wp.ces.org.tw/%E3%80%90%E6%9A%91%E6%9C%9F%E3%80%91%E5%9F%BA%E7%9D%A3%E5%BE%92%E7%9A%84%E7%94%9F%E6%AD%BB%E5%80%AB%E7%90%86%E6%8A%89%E6%93%87/">
+        基督徒的生死倫理抉擇 (華神課程 2018)</a>
+  <a class="index-sns__name" target="_blank"
+        href="https://www.youtube.com/watch?v=eSX-PL1ef8g">
+          墮胎，是不是殺生？(佳音電台採訪節錄 2016)</a>
+
+</div>
+
+
+<!--third one -->
+<div class="index-line u-font">
+  <span class="index-line__content u-font">
+    <h2>~文章~</h2>
+</span></div>
+<div class="index-sns u-font">
+
+<a class="index-sns__name" target="_blank"
+       href="http://www.ccmm.org.tw/httpstatus.aspx?aspxerrorpath=/page/article/show.aspx">
+      同性「婚姻」的迷思─從基督教倫理的角度談起 (路加傳道會)</a>
+</div>
+<br>
+<br>
+<br>
+<hr>
+
+</body>
+  </html>

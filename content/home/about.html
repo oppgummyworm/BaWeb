@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content="{{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
+  {{ with .Site.Params.themecolor }}
+    <meta name="theme-color" content="{{ . }}" />
+  {{ end }}
+  <meta property="og:site_name" content="{{ .Site.Title }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  {{ with .Params.images }}
+    {{ range first 5 . }}
+      <meta property="og:image" content="{{ . }}" />
+    {{ end }}
+  {{ end }}
+      <meta property="og:type" content="website" />
+
+
+  <title>
+    {{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}
+  </title>
+
+  <link rel="alternative stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/github.css" />
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/color-theme.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/catcon.ico" />
+  <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}images/cat_icon.png" />
+
+  {{ range .Site.Params.customCSS }}
+    <link rel="stylesheet" href="{{ (print "css/" . ) | absURL }}">
+  {{ end }}
+
+
+</head>
+  <body style= background:linear-gradient(#ffffff,#3c9dbf)>
+
+  <header>
+    <section class="header-text" style="background-image:url({{ "images/aboutheader.png" | absURL }})">
+<br>
+<br>
+<br>
+
+
+      <!-- sites -->
+      <div class="navbar-container">
+        {{ range .Site.Menus.main }}
+          <a class="btn btn-default navbar-item" href="{{ .URL | absLangURL | safeURL }}">
+            {{ .Name }}
+          </a>
+        {{ end }}
+      </div>
+
+    </section>
+    </header>
+  </header>
+
+<div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+  <div class=page-heading><h1>作者簡介</h1></div></div></div></div></div></header>
+  <div class=container role=main><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><article role=main class=post>
+<h2 id=-curtis-chang>張立明 Curtis Chang</h2>
+<hr>
+    <dl class="wp-caption align" style=max-width:px><dt><img src=/image/MCCA.jpg alt></dt>
+<hr>
+<p>張立明醫師在台灣行醫時，因臨終病患倫理抉擇與福音需要，到美國三一 (Trinity) 神學院修生命倫理碩士 (MA Bioethics)。2000 年應台灣 Lilly 公司聘為 medical director，帶領新藥研發團隊。上帝開啟專業事奉之門，他受邀擔任台灣衛生署醫學倫理委員、台灣大學生命教育師資計畫科技與生命倫理組召集人、路加傳道會執委，在國內外大學、醫院、教會演講，主題涵蓋醫學倫理、神學、生物科技與臨床試驗。蒙上帝引領在台北華神完成神學碩士 (ThM)，主修系統神學。</p><p>2008 年應聘為美國 Lilly 總公司全球病患安全部資深醫療顧問及生技倫理委員。不久，在三一神學院擔任生命倫理中心諮詢委員。2013 年上帝清楚帶領進美國南方浸信會 (Southern Baptist) 神學院博士班 (PhD) 主修基督教倫理 (Christian ethics)。</p><p>現任美國 Takeda 公司全球病患安全部資深醫療部長與肝臟藥物安全委員會主席、美國三一神學院華人生命倫理教育主任及基督教倫理學兼任教師，2018 年在台北華神開授生命倫理密集課程。</p><p>著有《人之初：胚胎生命起點的探討》一書。連續六年主辦台灣路加傳道會醫學倫理研討會，並主編六冊基督徒醫學倫理系列。</p>
+
+
+<footer><div class=container></div></footer><script src=https://code.jquery.com/jquery-1.12.4.min.js integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin=anonymous></script><script>window.jQuery||document.write('<script src="lib/jquery.min.js"><\/script>')</script><script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js integrity=sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa crossorigin=anonymous></script><script>if(typeof($.fn.modal)==='undefined'){document.write('<script src="lib/bootstrap.min.js"><\/script>')}</script><script src=https://christianethicsforchinese.org/lib/main.js></script><script>if(window.netlifyIdentity){window.netlifyIdentity.on("init",user=>{if(!user){window.netlifyIdentity.on("login",()=>{document.location.href="/admin/";});}});}</script>
+
+
+
+
+
+<hr>
+  <p>~ <a href=https://www.linkedin.com/in/curtis-chang-3aa7716/>LinkedIn Profile</a> ~</p>
+<hr>
+<br>
+</body>
+
+  </html>

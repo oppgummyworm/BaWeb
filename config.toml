@@ -1,0 +1,44 @@
+theme = "hugo-theme-hamburg-master"
+baseURL = "https://kayla.org/"
+languageCode = "en-us"
+title = "基督徒倫理網站"
+
+[params]
+    # Short subtitle/tagline. This is displayed in the header.
+    themecolor = "#hexcolor" # Defines the tab color in Chrome for Android.
+    # To load additional CSS styles
+    customCSS = ['hamburg.css']
+    # Show this very user-friendly and absolutely not annoying GDPR notice at the bottom of the page
+    ShowGDPRNotice = true
+	subtitle = "The great example site of the hugo-hamburg-theme"
+	# Since 0.57.0 there's the concept of "main sections". The files for the section "posts" are in "./content/posts/".
+	mainSections = ["posts"]
+
+  [languages]
+    [languages.en]
+        languageCode = "en"
+        languageName = "English"
+        subtitle = "Kayla The Cat"
+        # Copyright notice. This is displayer in the footer.
+        copyright = "&copy; some license"
+        [languages.en.menu]
+            [[languages.en.menu.main]]
+                name = "首頁"
+                identifier = "home"
+                url = ""
+            [[languages.en.menu.main]]
+                name = "演講＆出版"
+                identifier = "publications"
+                url = "home/publications"
+            [[languages.en.menu.main]]
+                name = "主日學課程"
+                identifier = "sundayschool"
+                url = "home/sundayschool"
+            [[languages.en.menu.main]]
+                name = "作者簡介"
+                identifier = "about"
+                url = "home/about"
+            [[languages.en.menu.main]]
+                name = "分享園地"
+                identifier = "sharestuff"
+                url = "home/sharestuff"

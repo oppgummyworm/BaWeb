@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Share Stuff</title>
+    <!--icon-->
+        <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/catcon.ico" />
+<body class="list home">
+
+<!--header style-->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/color-theme.css" />
+
+<!--paperstyle from hugo-->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/paper.css" />
+
+      <link rel="alternative stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/github.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/color-theme.css" />
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+      <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/catcon.ico" />
+      <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}images/cat_icon.png" />
+
+    </body>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/yukidarkblue.css" />
+
+    </head>
+
+<body>
+  <div style= background:linear-gradient(#ffffff,#becfda)>
+   <header class="header">
+        <section class="header-text" style="background-image:url({{ "images/shareheader.png" | absURL }})">
+    <br>
+    <br>
+    <br>
+        <!-- sites -->
+          <div class="navbar-container">
+            {{ range .Site.Menus.main }}
+              <a class="btn btn-default navbar-item" href="{{ .URL | absLangURL | safeURL }}">
+                {{ .Name }}
+              </a>
+            {{ end }}
+          </div>
+
+        </section>
+        </header>
+        <div class="index-line u-font">
+              <h2>相關網站連結</h2>
+            </div>
+
+        <!--first one -->
+        <div class="index-line u-font">
+          <span class="index-line__content u-font">
+          <h3>~生命倫理議題~</h3>
+         </span></div>
+        <div class="index-sns u-font">
+
+          <a class="index-sns__name" target="_blank"
+             href="https://cbhd.org/resources/issues">
+              The Center for Bioethics & Human Dignity (CBHD) </a>
+          <a class="index-sns__name" target="_blank"
+             href="https://cmda.org/policy-issues-home/">
+              Christian Medical and Dental Associations (CMDA) </a>
+        <a class="index-sns__name" target="_blank"
+             href="https://kairos.news/38156">
+              影片：墮胎真相 (Kairos 風向新聞)</a>
+       <a class="index-sns__name" target="_blank"
+              href="https://vimeo.com/322962914">
+                影片：你出生前的生活 (EHD)</a>
+
+        </div>
+
+
+        <!--second one -->
+        <div class="index-line u-font">
+          <span class="index-line__content u-font">
+          <h3> ~醫療傳道機構~ </h3>
+        </span></div>
+        <div class="index-sns u-font">
+
+          <a class="index-sns__name" target="_blank"
+               href="http://www.ccmm.org.tw/index.aspx">
+            中華基督教路加傳道會 (CCMM)</a>
+          <a class="index-sns__name" target="_blank"
+               href="https://www.lcmmusa.org/">
+              北美路加醫療傳道會 (LCMM)</a>
+        </div>
+<br>
+<br>
+<br>
+<hr>
+  </body>
+  </html>

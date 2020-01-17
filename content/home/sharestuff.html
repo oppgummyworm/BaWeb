@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--icon-->
+      <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/catcon.ico" />
+    <title>Share Stuff</title>
+
+<body class="list home">
+
+<!--header style-->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/color-theme.css" />
+
+
+<!--paperstyle from hugo-->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/paper.css" />
+
+      <link rel="alternative stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/github.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/color-theme.css" />
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+      <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/catcon.ico" />
+      <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}images/cat_icon.png" />
+
+    </body>
+    </head>
+<body>
+  <div style= background:linear-gradient(#ffffff,#cedbe3)>
+   <header class="header">
+        <section class="header-text" style="background-image:url({{ "images/shareheader.png" | absURL }})">
+    <br>
+    <br>
+    <br>
+        <!-- sites -->
+          <div class="navbar-container">
+            {{ range .Site.Menus.main }}
+              <a class="btn btn-default navbar-item" href="{{ .URL | absLangURL | safeURL }}">
+                {{ .Name }}
+              </a>
+            {{ end }}
+          </div>
+
+        </section>
+        </header>
+    <main class="main">
+
+  <section class="entry-header">
+    <h1>分享園地</h1>
+  </section>
+<hr>
+
+<!--first one -->
+<article class="post-entry">
+  <header class="entry-header">
+    <h3>主日證道</h3>
+  </header>
+
+  <section class="entry-content">
+    <p>波士頓 CBCGB - 印城 CCCI</p>
+
+  </section>
+
+  <footer class="entry-footer">
+    <a class="entry-link" href="{{ .URL | safeURL }}/sermons"></a>
+  </footer>
+</article>
+
+
+<!--second one -->
+
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>創作文章集</h2>
+  </header>
+  <section class="entry-content">
+   <p>見證 - 家庭 - 思想 - 神學</p>
+  </section>
+  <footer class="entry-footer">
+  </footer>
+  <a class="entry-link" href="{{ .URL | safeURL }}/articles"></a>
+</article>
+
+
+<!--third one -->
+
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>相關網站連結</h2>
+  </header>
+  <section class="entry-content">
+   <p>生命倫理議題 - 醫療傳道機構</p>
+  </section>
+  <footer class="entry-footer">
+  </footer>
+  <a class="entry-link" href="{{ .URL | safeURL }}links"></a>
+</article>
+</main>
+
+</body>
+</html>

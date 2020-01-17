@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--icon-->
+      <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/catcon.ico" />
+    <title>Share Stuff</title>
+
+<body class="list home">
+
+<!--header style-->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/color-theme.css" />
+
+
+<!--paperstyle from hugo-->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/paper.css" />
+
+      <link rel="alternative stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/github.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/color-theme.css" />
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+      <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/catcon.ico" />
+      <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}images/cat_icon.png" />
+
+    </body>
+    </head>
+  <body class="list home">
+    <script>
+      setTheme();
+    </script>
+
+    <!DOCTYPE html>
+    <html lang="{{ .Site.LanguageCode }}">
+    <head prefix="og: http://ogp.me/ns#">
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+      <meta property="og:title" content="{{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
+      {{ with .Site.Params.themecolor }}
+        <meta name="theme-color" content="{{ . }}" />
+      {{ end }}
+      <meta property="og:site_name" content="{{ .Site.Title }}" />
+      <meta property="og:url" content="{{ .Permalink }}" />
+      {{ with .Params.images }}
+        {{ range first 5 . }}
+          <meta property="og:image" content="{{ . }}" />
+        {{ end }}
+      {{ end }}
+          <meta property="og:type" content="website" />
+
+
+      <title>
+        {{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}
+      </title>
+
+      <link rel="alternative stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/github.css" />
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}css/color-theme.css" />
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+      <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/catcon.ico" />
+      <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}images/cat_icon.png" />
+
+      {{ range .Site.Params.customCSS }}
+        <link rel="stylesheet" href="{{ (print "css/" . ) | absURL }}">
+      {{ end }}
+
+
+    </head>
+    <body>
+      <body style= background:linear-gradient(#edf7ee,#94d198)>
+
+      <header class="header">
+        <section class="header-text" style="background-image:url({{ "images/ssheader.png" | absURL }})">
+
+    <br>
+    <br>
+    <br>
+
+
+          <!-- sites -->
+          <div class="navbar-container">
+            {{ range .Site.Menus.main }}
+              <a class="btn btn-default navbar-item" href="{{ .URL | absLangURL | safeURL }}">
+                {{ .Name }}
+              </a>
+            {{ end }}
+          </div>
+
+        </section>
+        </header>
+    <main class="main">
+
+  <section class="entry-header">
+    <h1>主日學課程</h1>
+  </section>
+<hr>
+
+<!--first one -->
+<article class="post-entry">
+  <header class="entry-header">
+    <h3>同步讀經 2020</h3>
+  </header>
+
+  <section class="entry-content">
+   <p>Genesis</p>
+
+  </section>
+
+  <footer class="entry-footer">
+    <a class="entry-link" href="{{ .URL | safeURL }}bible2020"></a>
+  </footer>
+</article>
+
+
+<!--second one -->
+
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>同步讀經 2015</h2>
+  </header>
+  <section class="entry-content">
+   <p>write a description or something maybe :o
+...</p>
+  </section>
+  <footer class="entry-footer">
+  </footer>
+  <a class="entry-link" href="{{ .URL | safeURL }}bible2015"></a>
+</article>
+
+
+<!--third one -->
+
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>深知所信</h2>
+  </header>
+  <section class="entry-content">
+   <p>(教會成人主日學 2011)</p>
+  </section>
+  <footer class="entry-footer">
+  </footer>
+  <a class="entry-link" href="{{ .URL | safeURL }}truth2011"></a>
+</article>
+
+
+<!--fourth one -->
+<article class="post-entry">
+  <header class="entry-header">
+    <h3>生命倫理</h3>
+  </header>
+  <section class="entry-content">
+   <p>基督徒與當代生命倫理 Christian Bioethics </p>
+     <p>(教會成人主日學 2010)</p>
+  </section>
+
+  <footer class="entry-footer">
+    <a class="entry-link" href="{{ .URL | safeURL }}bioethics2010"></a>
+  </footer>
+</article>
+
+
+</main>
+
+</body>
+</html>
