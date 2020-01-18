@@ -1,5 +1,5 @@
 theme = "hugo-theme-hamburg-master"
-baseURL = "https://kayla.org/"
+baseURL = "https://kaylathecat.netlify.com/"
 languageCode = "en-us"
 title = "基督徒倫理網站"
 
@@ -42,3 +42,12 @@ title = "基督徒倫理網站"
                 name = "分享園地"
                 identifier = "sharestuff"
                 url = "home/sharestuff"
+
+
+
+# Change the default theme to be use when building the site with Hugo
+            theme = "hugo-theme-learn"
+
+            # For search functionality
+            [outputs]
+            home = [ "HTML", "RSS", "JSON"]
