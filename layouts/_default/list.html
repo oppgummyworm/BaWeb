@@ -1,17 +1,122 @@
-{{ partial "header.html" . }}
-<section class="article-list">
-  {{ range .Pages }}
-    <div class="delimiter"></div>
-    {{ .Render "li" }}
-  {{ end }}
-</section>
 
-<body>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>基督徒倫理網站</title>
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/catcon.ico" />
 
-<p> __Insert links that are used often__</p>
+<style>
+
+div {text-align:center;}
+h1 {text-align:center; font-family: courier;
+  font-size: 3.8em; font-weight:50}
+h2 {text-align:center;}
+.picbac {
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+.navbtn {
+  background-color: transparent;
+  border: white 1px solid;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 13px;
+  text-decoration: none;
+  font-family: sans-serif;
+  transition: 0.4s;
+  margin: 10px;
+
+}
+  .navbtn:hover {
+  color: white;
+  background-color: black;
+  opacity: 0.7
+   }
+
+ .box1 {
+     position: relative;
+     margin: auto;
+     border-radius: 5px;
+     padding:20px;
+     max-width: 300px;
+     height: 110px;
+     background-color: white;
+     display:block;
+     opacity: 0.8;
+     text-decoration: none;
+
+}
+
+</style>
+</head>
+
+<body class="picbac" style="background-image:url({{ "images/taiwanocean1.jpg" | absURL }})">
+<br>
+<br>
+<h1 style="color:white">基督徒倫理網站</h1>
+<div>
+  <a class="navbtn" href="{{ .Permalink | safeURL }}">
+      首頁</a>
+  <a class="navbtn" href="{{ .Permalink | safeURL }}/home/sundayschool">
+      主日學課程</a>
+  <a class="navbtn" href="{{ .Permalink | safeURL }}/home/publications">
+     演講＆出版</a>
+     <br>
+     <br>
+     <br>
+     <br>
+  <a class="navbtn" href="{{ .Permalink | safeURL }}/home/about">
+      作者簡介</a>
+  <a class="navbtn" href="{{ .Permalink | safeURL }}/home/sharestuff">
+      分享園地</a>
 
 
-<hr>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      </div>
+      </div>
+
+<div >
+
+<!--block 1-->
+<a class="box1" href="{{ .Permalink | safeURL }}/home/about">
+<img src=/image/book.jpg alt style="float:left;width:100px;height:120px">
+<br>人之初： <br>胚胎生命起點的探討<br>張立明 著
+</a>
+<br>
+<br>
+
+<!--block 2-->
+<a class="box1" href="{{ .Permalink | safeURL }}/sundayschool/bioethics">
+  <img src=/image/bioethics.jpg alt style="float:left;width:130px;height:100px">
+  <br>基督徒與<br>當代生命倫理：<br>錄音檔 & 投影片
+</a>
+<br>
+<br>
+
+<!--block 3-->
+<a class="box1" href="https://kairos.news/38156">
+  <img src=/image/link4.jpg alt style="float:left;width:130px;height:100px">
+  <br><br>影片：墮胎真相 <br>(Kairos 風向新聞)
+</a>
+<br>
+<br>
+
+<!--block 4-->
+<a class="box1" href="https://vimeo.com/322962914">
+    <img src=/image/link3.jpg alt style="float:left;width:130px;height:100px">
+  <br><br>影片：你出生前的生活 <br> (EHD)
+</a>
+<br>
+<br>
 </body>
+<footer>
+</footer>
 
-{{ partial "footer.html" . }}
+
+</html>
