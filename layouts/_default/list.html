@@ -9,7 +9,7 @@
 
 div {text-align:center;}
 h1 {text-align:center; font-family: courier;
-  font-size: 3.8em; font-weight:50}
+  font-size: 4.5em; font-weight:50}
 h2 {text-align:center;}
 .picbac {
       background-size: cover;
@@ -20,9 +20,9 @@ h2 {text-align:center;}
   background-color: transparent;
   border: white 1px solid;
   color: white;
-  padding: 15px 25px;
+  padding: 20px 35px;
   text-align: center;
-  font-size: 13px;
+  font-size: 26px;
   text-decoration: none;
   font-family: sans-serif;
   transition: 0.4s;
@@ -40,8 +40,8 @@ h2 {text-align:center;}
      margin: auto;
      border-radius: 5px;
      padding:20px;
-     max-width: 300px;
-     height: 110px;
+     width: 500px;
+     height: 200px;
      background-color: white;
      display:block;
      opacity: 0.8;
@@ -59,14 +59,19 @@ h2 {text-align:center;}
 <div>
   <a class="navbtn" href="{{ .Permalink | safeURL }}">
       首頁</a>
-  <a class="navbtn" href="{{ .Permalink | safeURL }}/home/sundayschool">
-      主日學課程</a>
   <a class="navbtn" href="{{ .Permalink | safeURL }}/home/publications">
      演講＆出版</a>
-     <br>
-     <br>
-     <br>
-     <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+  <a class="navbtn" href="{{ .Permalink | safeURL }}/home/sundayschool">
+      主日學課程</a>
+      <br>
+      <br>
+      <br>
+      <br>
   <a class="navbtn" href="{{ .Permalink | safeURL }}/home/about">
       作者簡介</a>
   <a class="navbtn" href="{{ .Permalink | safeURL }}/home/sharestuff">
@@ -85,7 +90,7 @@ h2 {text-align:center;}
 
 <!--block 1-->
 <a class="box1" href="{{ .Permalink | safeURL }}/home/about">
-<img src=/image/book.jpg alt style="float:left;width:100px;height:120px">
+<img src=/image/book.jpg alt style="float:left;width:150px;height:200px">
 <br>人之初： <br>胚胎生命起點的探討<br>張立明 著
 </a>
 <br>
@@ -93,7 +98,7 @@ h2 {text-align:center;}
 
 <!--block 2-->
 <a class="box1" href="{{ .Permalink | safeURL }}/sundayschool/bioethics">
-  <img src=/image/bioethics.jpg alt style="float:left;width:130px;height:100px">
+  <br><img src=/image/bioethics.jpg alt style="float:left;width:200px;height:150px">
   <br>基督徒與<br>當代生命倫理：<br>錄音檔 & 投影片
 </a>
 <br>
@@ -101,7 +106,7 @@ h2 {text-align:center;}
 
 <!--block 3-->
 <a class="box1" href="https://kairos.news/38156">
-  <img src=/image/link4.jpg alt style="float:left;width:130px;height:100px">
+  <br><img src=/image/link3.jpg alt style="float:left;width:200px;height:150px">
   <br><br>影片：墮胎真相 <br>(Kairos 風向新聞)
 </a>
 <br>
@@ -109,7 +114,7 @@ h2 {text-align:center;}
 
 <!--block 4-->
 <a class="box1" href="https://vimeo.com/322962914">
-    <img src=/image/link3.jpg alt style="float:left;width:130px;height:100px">
+    <br><img src=/image/link4.jpg alt style="float:left;width:200px;height:150px">
   <br><br>影片：你出生前的生活 <br> (EHD)
 </a>
 <br>
